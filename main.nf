@@ -12,7 +12,7 @@ process foo {
   def delay = range.size() == 1 ? range[0] : range[0] + new Random().nextInt(range[1] - range[0] + 1)
   """
   echo "sleep $delay"
-  sleep $delay
+  sleeep $delay
   exit $params.exit
   """
 }
